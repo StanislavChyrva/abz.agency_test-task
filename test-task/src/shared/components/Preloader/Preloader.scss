@@ -1,0 +1,63 @@
+@import "../../../App/variables";
+
+.preloader {
+  width: 92.5vw;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 3vw 0;
+}
+
+.preloader__letters-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader__letter {
+  animation-name: loadingF;
+  animation-duration: .8s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  color: $text-secondary
+}
+
+.l-1 {
+  animation-delay: 0.1s;
+}
+.l-2 {
+  animation-delay: 0.17s;
+}
+.l-3 {
+  animation-delay: 0.24s;
+}
+.l-4 {
+  animation-delay: 0.31s;
+}
+.l-5 {
+  animation-delay: 0.38s;
+}
+.l-6 {
+  animation-delay: 0.45s;
+}
+.l-7 {
+  animation-delay: 0.52s;
+}
+.l-8 {
+  animation-delay: 0.61s;
+}
+.l-9 {
+  animation-delay: 0.68s;
+}
+.l-10 {
+  animation-delay: 0.75s;
+}
+
+@keyframes loadingF {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

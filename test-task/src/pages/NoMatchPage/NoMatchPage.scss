@@ -1,0 +1,25 @@
+.no-match {
+  margin-top: 100px;
+  p {
+    margin-bottom: 110px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .no-match {
+    margin-top: unset;
+
+    p {
+      margin-bottom: 150px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .no-match {
+    p {
+      margin-bottom: 180px;
+    }
+  }
+}

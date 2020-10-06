@@ -1,0 +1,222 @@
+@import "../../../../App/variables";
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  .btn {
+
+  }
+}
+
+label {
+  font-size: 15px;
+  line-height: 16px;
+  margin-bottom: 13px;
+}
+
+
+.field__control {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input__assistive-text {
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  color: $input-assistive-text;
+  font-size: 11px;
+}
+
+.error {
+  position: absolute;
+  bottom: 4px;
+  font-size: 11px;
+  left: 0;
+}
+
+.sign-up-form__btn-control {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.field__control-radio {
+  min-height: 190px;
+  .error {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+  }
+}
+
+
+// styles only for Fire Fox. Style input[type="file"] using ::after and ::before on <label className=".sign-up-form__label-photo">
+@supports (-moz-appearance:none) {
+  .field__control__file {
+    input {
+      visibility: hidden;
+    }
+  }
+
+  .sign-up-form__label-photo {
+    position: relative;
+  }
+    .sign-up-form__label-photo::before {
+      content: 'Browse';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $input-border;
+      border-radius: 0 4px 4px 0;
+      outline: none;
+      -webkit-user-select: none;
+      cursor: pointer;
+      box-sizing: border-box;
+      font-size: 16px;
+
+      height: 36px;
+      width: 85px;
+
+      position: absolute;
+      right: 0;
+      top: 200%;
+      background-color: $input-file-button;
+      z-index: 2;
+      transition: $transition-primary;
+    }
+
+    .sign-up-form__label-photo::after {
+      content: 'Upload your photo';
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border: 1px solid $input-border;
+      border-radius: 4px;
+      outline: none;
+      -webkit-user-select: none;
+      box-sizing: border-box;
+
+      color: $input-placeholder;
+      height: 36px;
+      width: 100%;
+      padding-left: 15px;
+
+      position: absolute;
+      left: 0;
+      top: 200%;
+      background-color: $background-color;
+      z-index: 1;
+      transition: $transition-primary;
+
+    }
+}
+
+// styles for input[type="file"]
+.field__control__file {
+  margin-bottom: 16px;
+
+  input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+
+
+  input::before {
+    content: 'Browse';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $input-border;
+    border-radius: 0 4px 4px 0;
+    outline: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 16px;
+
+    height: 36px;
+    width: 85px;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: $input-file-button;
+    z-index: 2;
+    transition: $transition-primary;
+  }
+
+  input::after {
+    content: 'Upload your photo';
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid $input-border;
+    border-radius: 4px;
+    outline: none;
+    -webkit-user-select: none;
+    box-sizing: border-box;
+
+    color: $input-placeholder;
+    height: 36px;
+    width: 100%;
+    padding-left: 15px;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: $background-color;
+    z-index: 1;
+    transition: $transition-primary;
+  }
+
+  input[type="file"].input--required::after {
+    content: 'Uploaded' !important;
+  }
+
+  input:focus {
+    &::before {
+      border-color:$input-border--focus;
+    }
+    &::after {
+      border-color:$input-border--focus;
+    }
+  }
+
+  input.input--error {
+    &::before {
+      border-color:$input-border--error;
+    }
+    &::after {
+      border-color:$input-border--error;
+    }
+  }
+
+  input.input--error:focus {
+    &::before {
+      border-color:$input-border--error;
+    }
+    &::after {
+      border-color:$input-border--error;
+    }
+  }
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .sign-up-form__btn-control {
+    margin-bottom: 113px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sign-up-form__btn-control {
+    margin-bottom: 163px;
+  }
+}

@@ -1,0 +1,73 @@
+@import "../../../../App/variables";
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+
+  max-height: 100vh;
+  overflow: scroll;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate3d(0, 0, 0);
+  box-sizing: border-box;
+  padding: 0;
+  background: $background-color;
+  z-index: 1001;
+  transition: $transition-primary;
+
+
+
+  .logo {
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 15px;
+  }
+}
+
+.mobile-menu--hidden {
+  transform: translateX(-100vw);
+}
+
+.mobile-menu__section {
+  width: 290px;
+  box-sizing: border-box;
+  padding: 24px 15px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid $mobile-menu-line;
+}
+
+.mobile-menu__link {
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 19px;
+
+  &:last-child {
+    margin-bottom: unset;
+  }
+
+}
+
+.mobile-menu__link--active {
+  color: $link--active;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    .logo {
+      height: 60px;
+      margin-left: 30px;
+    }
+
+    .mobile-menu__section {
+      padding: 30px 30px;
+    }
+  }
+
+}
+
+
+

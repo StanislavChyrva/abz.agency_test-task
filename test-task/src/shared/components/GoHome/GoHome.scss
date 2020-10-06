@@ -1,0 +1,29 @@
+@import "../../../App/variables";
+
+.go-home {
+  display: flex;
+  justify-content: center;
+  width: 210px;
+
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  margin-left: -105px;
+  box-sizing: border-box;
+
+
+}
+
+@media screen and (min-width: 768px){
+  .go-home {
+    bottom: 105px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .go-home {
+    bottom: 130px;
+  }
+}
+
+

@@ -1,0 +1,15 @@
+export const TOGGLE_MOBILE_MENU = 'TOGGLE_MOBILE_MENU';
+export const HEADER_RESIZE = 'HEADER_RESIZE';
+
+export const GET_USERS = 'GET_USERS';
+export const SHOW_MORE_USERS = 'SHOW_MORE_USERS';
+export const HIDE_USERS = 'HIDE_USERS';
+
+export const GET_TOKEN = 'GET_TOKEN';
+export const GET_POSITIONS = 'GET_POSITIONS';
+export const GET_REQUEST_MESSAGE = 'GET_REQUEST_MESSAGE';
+export const GET_REQUEST_SUCCESS = 'GET_REQUEST_SUCCESS';
+
+export const SHOW_MODAL = 'SHOW_MODAL';
+export const CLOSE_MODAL = 'CLOSE_MODAL';
+export const SET_IS_SUCCESS_MODAL = 'SET_IS_SUCCESS_MODAL';

@@ -1,0 +1,67 @@
+.intro {
+  color: #fff;
+  background: url("../../../../assets/banner-photo.jpg"), no-repeat;
+  background-size: cover;
+  margin-top: 40px;
+
+  h1 {
+    text-transform: uppercase;
+    margin-top: 70px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 23px;
+    color: #fff;
+  }
+
+  .btn {
+    margin-bottom: 75px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+.intro {
+  align-items: flex-start;
+  margin-top: 60px;
+
+  h1 {
+    width: 420px;
+    margin-top: 59px;
+    margin-bottom: 29px;
+    text-align: left;
+  }
+  p {
+    width: 480px;
+    text-align: left;
+    margin-bottom: 33px;
+  }
+
+  .btn {
+    margin-bottom: 65px;
+  }
+}
+}
+
+@media screen and (min-width: 1024px) {
+  .intro {
+    h1 {
+      width: 530px;
+      margin-top: 107px;
+      margin-bottom: 24px;
+    }
+    p {
+      width: 530px;
+      text-align: left;
+      margin-bottom: 35px;
+    }
+
+    .btn {
+      margin-bottom: 115px;
+    }
+  }
+}
+
+
+
